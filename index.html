@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Abdulbari Abdullah Mulla - Fresh Computer Science Graduate specializing in Backend Development, GIS & Spatial Data, and Software Engineering. View my portfolio, projects, and experience.">
+    <meta name="keywords" content="Abdulbari Mulla, Backend Developer, Software Engineer, GIS, Portfolio, Computer Science, Java, PHP, Python">
+    <meta name="author" content="Abdulbari Abdullah Mulla">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Abdulbari Abdullah Mulla | Portfolio">
+    <meta property="og:description" content="Fresh Computer Science Graduate - Backend Developer & GIS Specialist">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+    
+    <title>Abdulbari Abdullah Mulla | Portfolio</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar" aria-label="Main Navigation">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="#hero" aria-label="Home">A.M.</a>
+            </div>
+            
+            <button id="hamburger" class="hamburger" aria-label="Toggle Navigation" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <ul id="nav-links" class="nav-links">
+                <li><a href="#hero" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <header id="hero" class="hero">
+            <div class="hero-bg-animated">
+                <canvas id="particles-canvas"></canvas>
+            </div>
+            <div class="hero-content" data-animate="fade-up">
+                <p class="greeting">Hello, I'm</p>
+                <h1>Abdulbari Abdullah Mulla</h1>
+                <h2 class="title"><span id="typing-text"></span><span class="typing-cursor">|</span></h2>
+                <p class="tagline">Backend Developer · GIS & Spatial Data · Software Engineer</p>
+                
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary" id="btn-view-work">
+                        <i class="fas fa-code"></i> View My Work
+                    </a>
+                    <a href="#contact" class="btn btn-secondary" id="btn-get-in-touch">
+                        <i class="fas fa-envelope"></i> Get In Touch
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- About Section -->
+        <section id="about" class="section about-section">
+            <div class="container" data-animate="fade-up">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <p>
+                        Fresh Computer Science graduate with hands-on experience in software development, GIS, and 
+                        AI-assisted data projects through a six-month co-op program. Experienced in geospatial data 
+                        processing, data validation, chatbot evaluation, and UI prototyping while collaborating in 
+                        Agile environments. Seeking an entry-level <strong style="color: var(--primary-accent);">Backend Developer</strong> 
+                        or <strong style="color: var(--secondary-accent);">Software Engineer</strong> position to leverage 
+                        my technical skills and deliver impactful software solutions.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section experience-section">
+            <div class="container">
+                <h2 class="section-title" data-animate="fade-up">Experience</h2>
+                
+                <div class="timeline">
+                    <!-- Experience 1 -->
+                    <div class="timeline-item" data-animate="fade-right">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <h3 class="role">Data Analyst</h3>
+                            <h4 class="company">First City</h4>
+                            <span class="date">Hajj Season 1447 H (2026)</span>
+                            <ul class="duties">
+                                <li>Analysed pilgrim train dispatch data to support crowd flow operations and reporting.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Experience 2 -->
+                    <div class="timeline-item" data-animate="fade-right">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <h3 class="role">Software Development & GIS Intern</h3>
+                            <h4 class="company">First City</h4>
+                            <span class="date">Mar 2025 – Aug 2025</span>
+                            <ul class="duties">
+                                <li>Cleaned, validated, and maintained large-scale GIS datasets using ArcGIS Pro and QGIS.</li>
+                                <li>Automated GIS data processing tasks using Python scripts to perform spatial queries, duplicate detection, and attribute validation to improve data quality.</li>
+                                <li>Participated in the development and evaluation of TsleemGPT, preparing datasets and validating chatbot responses through structured QA testing and prompt evaluation.</li>
+                                <li>Designed UI prototypes using Figma for internal software projects.</li>
+                                <li>Collaborated with developers using Git and GitHub in a WSL development environment.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Experience 3 -->
+                    <div class="timeline-item" data-animate="fade-right">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <h3 class="role">Crowd Management Officer</h3>
+                            <h4 class="company">Al Yamama Company</h4>
+                            <span class="date">Hajj Season 1445 H (2024)</span>
+                            <ul class="duties">
+                                <li>Managed crowd flow at SAR Holy Sites Train stations across high-density zones during Hajj.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section projects-section">
+            <div class="container">
+                <h2 class="section-title" data-animate="fade-up">Projects</h2>
+                
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <article class="project-card glass-card" data-animate="fade-up" id="project-bulbul">
+                        <div class="project-content">
+                            <h3 class="project-title">
+                                AL-Bulbul AL-Balegh 
+                                <span class="project-badge">Graduation Project</span>
+                            </h3>
+                            <div class="project-tags">
+                                <span class="tag">Usability Testing</span>
+                                <span class="tag">UI/UX</span>
+                                <span class="tag">AI Validation</span>
+                            </div>
+                            <ul class="project-details">
+                                <li>Led a multidisciplinary graduation project from planning to delivery.</li>
+                                <li>Conducted usability testing, identified functional and UI/UX issues, and validated AI output.</li>
+                                <li>Proposed product improvements based on testing results and UX observations.</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card glass-card" data-animate="fade-up" id="project-automation">
+                        <div class="project-content">
+                            <h3 class="project-title">Premium Phone Number Automation Tool</h3>
+                            <div class="project-tags">
+                                <span class="tag">Java</span>
+                                <span class="tag">OCR</span>
+                                <span class="tag">Desktop Automation</span>
+                            </div>
+                            <ul class="project-details">
+                                <li>Developed a Java desktop automation tool to identify premium mobile numbers.</li>
+                                <li>Automated keyboard and mouse interactions to integrate OCR output into the application.</li>
+                                <li>Processed extracted text and evaluated number patterns based on predefined rules.</li>
+                                <li>Reduced manual and mental effort through workflow automation.</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="project-card glass-card" data-animate="fade-up" id="project-notes">
+                        <div class="project-content">
+                            <h3 class="project-title">Notes Web Application</h3>
+                            <div class="project-tags">
+                                <span class="tag">PHP</span>
+                                <span class="tag">Backend</span>
+                                <span class="tag">MySQL</span>
+                            </div>
+                            <ul class="project-details">
+                                <li>Built a notes management web application while learning PHP.</li>
+                                <li>Applied backend fundamentals, including routing, forms, and database operations.</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section skills-section">
+            <div class="container">
+                <h2 class="section-title" data-animate="fade-up">Skills</h2>
+                
+                <div class="skills-container">
+                    <div class="skills-group glass-card" data-animate="fade-right">
+                        <h3 class="skills-group-title">Technical Skills</h3>
+                        <div class="skills-list">
+                            <div class="skill-category">
+                                <h4><i class="fas fa-code"></i> Languages</h4>
+                                <p>Java · PHP · SQL · Python · HTML · CSS</p>
+                            </div>
+                            <div class="skill-category">
+                                <h4><i class="fas fa-globe"></i> GIS & Spatial</h4>
+                                <p>ArcGIS Pro · QGIS · OpenStreetMap</p>
+                            </div>
+                            <div class="skill-category">
+                                <h4><i class="fas fa-tools"></i> Tools & Tech</h4>
+                                <p>VS Code · Git · GitHub · WSL · Figma · Stitch</p>
+                            </div>
+                            <div class="skill-category">
+                                <h4><i class="fas fa-lightbulb"></i> Concepts</h4>
+                                <p>OOP · Software Design Patterns · QA Testing · SDLC</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills-group glass-card" data-animate="fade-left">
+                        <h3 class="skills-group-title">Core Competencies</h3>
+                        <ul class="competencies-list">
+                            <li><i class="fa-solid fa-server"></i> Backend Development</li>
+                            <li><i class="fa-solid fa-earth-americas"></i> GIS Data Processing</li>
+                            <li><i class="fa-solid fa-database"></i> Data Validation</li>
+                            <li><i class="fa-solid fa-mobile-screen"></i> UI/UX Evaluation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education & Certificates Section -->
+        <section id="education" class="section education-section">
+            <div class="container">
+                <h2 class="section-title" data-animate="fade-up">Education & Certificates</h2>
+                
+                <div class="edu-cert-container">
+                    <!-- Education -->
+                    <div class="education-block glass-card" data-animate="fade-up">
+                        <h3 class="block-title"><i class="fa-solid fa-graduation-cap"></i> Education</h3>
+                        <div class="edu-item">
+                            <h4>Bachelor's in Computer Science</h4>
+                            <p class="institution">Umm Al-Qura University | 2022 – 2026</p>
+                            <p class="details">Graduated: June 2026</p>
+                            <p class="gpa">GPA: <span class="highlight">3.77 / 4.0</span></p>
+                        </div>
+                    </div>
+
+                    <!-- Certificates -->
+                    <div id="certificates" class="certificates-block glass-card" data-animate="fade-up">
+                        <h3 class="block-title"><i class="fa-solid fa-certificate"></i> Certificates</h3>
+                        <ul class="cert-list">
+                            <li class="cert-item">
+                                <h4>Complete ArcGIS Pro Mastery</h4>
+                                <p>Udemy · Mar 2025</p>
+                            </li>
+                            <li class="cert-item">
+                                <h4>Network+ Camp (Boot Camp)</h4>
+                                <p>College of Computer Science, UQU · May 2026</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <h2 class="section-title" data-animate="fade-up">Get In Touch</h2>
+                
+                <div class="contact-container">
+                    <div class="contact-info glass-card" data-animate="fade-right">
+                        <h3>Contact Information</h3>
+                        <p>Feel free to reach out for opportunities or just to say hello!</p>
+                        
+                        <ul class="contact-details">
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                <a href="mailto:aabamula@gmail.com" id="contact-email">aabamula@gmail.com</a>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-phone"></i>
+                                <a href="tel:+966558189271" id="contact-phone">+966 55 818 9271</a>
+                            </li>
+                            <li>
+                                <i class="fa-brands fa-github"></i>
+                                <a href="https://github.com/AbuAlbr" target="_blank" rel="noopener noreferrer" id="contact-github">GitHub Profile</a>
+                            </li>
+                            <li>
+                                <i class="fa-brands fa-linkedin"></i>
+                                <a href="https://linkedin.com/in/abdulbarimulla" target="_blank" rel="noopener noreferrer" id="contact-linkedin">LinkedIn Profile</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="contact-form-container glass-card" data-animate="fade-left">
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-group">
+                                <label for="contact-name">Name</label>
+                                <input type="text" id="contact-name" name="name" required placeholder="Your Name">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="contact-email-input">Email</label>
+                                <input type="email" id="contact-email-input" name="email" required placeholder="Your Email">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="contact-subject">Subject</label>
+                                <input type="text" id="contact-subject" name="subject" required placeholder="Subject">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="contact-message">Message</label>
+                                <textarea id="contact-message" name="message" rows="5" required placeholder="Your Message"></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-submit" id="btn-submit">
+                                <i class="fas fa-paper-plane"></i> Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h3>Abdulbari Abdullah Mulla</h3>
+                <p>Backend Developer · Software Engineer</p>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-social">
+                <h4>Connect</h4>
+                <div class="social-icons">
+                    <a href="https://github.com/AbuAlbr" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/abdulbarimulla" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:aabamula@gmail.com" aria-label="Email">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Abdulbari Abdullah Mulla. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
